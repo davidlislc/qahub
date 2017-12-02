@@ -1,0 +1,14 @@
+version: '2'
+services:
+    qahub-app:
+        image: qahub
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://qahub-mysql:3306/qahub?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    qahub-mysql:
+        extends:
+            file: mysql.yml
+            service: qahub-mysql
