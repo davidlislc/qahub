@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "faith.bibleqa",
-      "nativeLanguage": "zh-cn"
+      "nativeLanguage": "en"
     },
     "jhipsterVersion": "4.11.1",
     "baseName": "qahub",
@@ -30,10 +30,10 @@
     "testFrameworks": [],
     "jhiPrefix": "jhi",
     "enableTranslation": true,
-    "nativeLanguage": "zh-cn",
+    "nativeLanguage": "en",
     "languages": [
-      "zh-cn",
-      "en"
+      "en",
+      "zh-cn"
     ]
   }
 }
